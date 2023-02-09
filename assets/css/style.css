@@ -202,15 +202,16 @@ z-index: 1000;
 
 /* Btn */
 .btn {
-    padding: 11px 20px;
+    padding: 15px 45px;
     display: inline-block;
-    vertical-align: top;
+    vertical-align: middle;
     font-family: 'PT Sans', sans-serif;
     color: #fff;
     font-size: 18px;
     font-weight: 700;
     line-height: 1.1;
     text-align: center;
+    text-decoration: none;
     border: none;
     cursor: pointer;
     background-color: #000;
@@ -230,9 +231,25 @@ z-index: 1000;
 
 /* Section */
 .section {
-    padding: 60px;
+    padding: 60px 0;
 }
 
+.section__title {
+    font-family: 'Lato', sans-serif;
+    font-size: 45px;
+    color: #2C2C2C;
+    font-weight: 900;
+    line-height: 1.2;
+    margin-bottom: 40px;
+}
+
+.section__title span {
+    color: #004AF2;
+}
+
+.section--map {
+    background: url(../images/map.svg) no-repeat left 30px top 130px;
+}
 
 /* Services */
 .servises {
@@ -313,4 +330,41 @@ z-index: 1000;
     font-size: 90px;
     line-height: 1;
     color: rgba(44, 44, 44, 0.05);
+}
+
+
+/* Clients */
+.clients {
+    display: flex;
+}
+
+.clients__logos  {
+    width: 60%;
+    margin-bottom: 60px;
+}
+
+.clients__rewiews {
+    width: 40%;
+}
+
+.clients__list {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.clients__list li {
+    margin-bottom: 50px;
+    margin-right: 40px;
+}
+
+.clients__love {
+    display: inline-block;
+    min-height: 47px;
+    color: #464646;
+    font-size: 18px;
+    margin-left: 40px;
+    padding-top: 5px;
+
+    background: url(../images/heart.svg) no-repeat left 20px top;
 }
