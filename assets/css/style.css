@@ -896,6 +896,10 @@ ol {
   width: 50%;
 }
 
+.main__col--text {
+    width: 70%;
+}
+
 .main_col--right {
   margin-left: auto;
 }
