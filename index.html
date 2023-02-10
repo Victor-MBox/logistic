@@ -44,30 +44,17 @@
                     </div>
 
                     <div class="reqest-form__content">
-                        <form class="form" action="/" method="post">
-                            <div class="form__group">
-                                <input class="input input--user" type="text" placeholder="Your name">
-                            </div>
-                            <div class="form__group">
-                                <input class="input input--phone" type="tel" placeholder="Your phone">
-                            </div>
-                            <div class="form__group">
-                                <input class="input input--email" type="email" placeholder="Your email">
-                            </div>
-                            <button class="btn btn--block btn--orange" type="submit">
-                                Call me back
-                            </button>
-                        </form>
+                         
                     </div>
-                </div>
 
-                <div class="intro__text">
-                    <div class="intro__countries">USA, Europe, Asia</div>
-                    <h1 class="intro__title">
-                        <span class="intro__title-amp">&amp;</span>
-                        Trans<br>Logistic
-                    </h1>
                 </div>
+                    <div class="intro__text">
+                        <div class="intro__countries">USA, Europe, Asia</div>
+                        <h1 class="intro__title">
+                            <span class="intro__title-amp">&amp;</span>
+                            Trans<br>Logistic
+                        </h1>
+                    </div>
             </div><!--/. Intro-inner -->
         </div><!--/. Container -->
     </div><!--/. Intro -->
@@ -208,7 +195,7 @@
                 </div>
             </div><!--/. clients -->
 
-            <a class="btn btn--orange" href="#">Become a client</a>
+            <button class="btn btn--orange btn--shadow" href="#">Become a client</button>
             <span class="clients__love">we love our clients</span>
 
         </div><!--/. container -->
@@ -336,7 +323,7 @@
                 <h4 class="mission__subtext">Book your Cargo now &amp; Your job just got a lot easier</h4>
             </div>
             <div class="text-centr">
-                <button class="btn btn--orange " type="button">Become a client</button>
+                <button class="btn btn--orange btn--shadow" type="button">Become a client</button>
             </div>
         </div><!--/. container -->
     </section><!--/. section -->
@@ -346,38 +333,117 @@
         <div class="container">
             <h2 class="section__title"><span> Interesting</span> to read</h2>
 
-            <div class="news">
-                <div class="news__item">
-                    <h4 class="news__title">
+            <div class="articles">
+                <article class="articles__item">
+                    <h4 class="articles__title">
                         <a href="#">News title</a>
                     </h4>
-                    <div class="news__text">
+                    <div class="articles__text">
                         Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt
                         ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo
                         dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor
                         sit amet.
                     </div>
-                    <time class="news__data" pubdate="01-03-2022 19:00">1 March, 2022</time>
+                    <time class="articles__data" pubdate="01-03-2022 19:00">1 March, 2022</time>
 
-                </div>
+                </article>
 
-                <div class="news__item">
-                    <h4 class="news__title">
+                <article class="articles__item">
+                    <h4 class="articles__title">
                         <a href="#">News title</a>
                     </h4>
-                    <div class="news__text">
+                    <div class="articles__text">
                         Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt
                         ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo
                         dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor
                         sit amet.
                     </div>
-                    <time class="news__data" pubdate="01-03-2022 19:00">1 March, 2022</time>
+                    <time class="articles__data" pubdate="01-03-2022 19:00">1 March, 2022</time>
 
-                </div>
+                </article>
             </div>
-
+            <a class="btn  btn--orange btn--shadow" href="#">Visit blog </a>
         </div><!--/. container -->
     </section><!--/. section -->
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <img src="assets/images/logo-black.svg" alt="">
+            <address class="footer__contacts">
+                <p>New York, Street, ZIP code</p> 
+                <p>Call Us: <a href="tel:+9948373123">+9948373123</a> or E-mail: <a href="mailto:hello@centerlogistic.com">hello@centerlogistic.com</a></p> 
+            </address>
+            <nav class="footer__nav">
+                <a href="#">Terms &amp; Contidions</a>
+                <a href="#">Privacy Policy</a>
+                <a href="#">Our blog</a>
+            </nav>
+        </div><!--/. container -->
+    </footer><!--/. footer -->
+
+
+    <!-- Modals --> 
+    <div class="modal" id="becomeClientModal">
+        <div class="modal__inner">
+            <div class="modal__header">
+                <h4 class="modal__title"<p>Need to deliver your cargo?</p>
+                    <p>We can help!</p></h4>
+                    <div class="modal__text">Fill a little form and we will call you back!</div>
+            </div>
+                <form class="form" action="/" method="post">
+                    <div class="form__group">
+                        <input class="input  input--dark input--user" type="text" placeholder="Your name">
+                    </div>
+                    <div class="form__group">
+                        <input class="input input--dark  input--phone" type="tel" placeholder="Your phone">
+                    </div>
+                    <div class="form__group">
+                        <input class="input input--dark  input--email" type="email" placeholder="Your email">
+                    </div>
+                    <button class="btn btn--block btn--orange" type="submit">
+                        Call me back
+                    </button>
+                </form> 
+
+                <div class="modal__footer">
+                     <h4 class="modal__footer-title">Our contacts</h4>
+                     <address class="modal__contacts">
+                        <p>New York, Street, ZIP code</p>
+                        <p>Phone: <a href="tel:+9948373123">+9948373123</a></p>
+                        <p>E-mail: <a href="mailto:hello@centerlogistic.com">hello@centerlogistic.com</a></p>
+                        </address>
+                </div>
+
+                <button class="modal__close" type="button">
+                    <img src="assets/images/close.svg" alt="Close">
+                </button>
+        </div><!--/. modal_inner -->
+    </div><!--/. modal -->
+
+    <div class="modal" id="thenksModal">
+        <div class="modal__inner">
+            <div class="modal__header">
+                <img class="modal__icon" src="assets/images/tick.svg" alt="">
+                <h4 class="modal__title"> Thanks for your request
+                </h4>
+                    <div class="modal__text">We call you back as soon as possible!</div>
+            </div>
+
+                <div class="modal__footer">
+                     <h4 class="modal__footer-title">Our contacts</h4>
+                     <address class="modal__contacts">
+                        <p>New York, Street, ZIP code</p>
+                        <p>Phone: <a href="tel:+9948373123">+9948373123</a></p>
+                        <p>E-mail: <a href="mailto:hello@centerlogistic.com">hello@centerlogistic.com</a></p>
+                        </address>
+                </div>
+
+                <button class="modal__close" type="button">
+                    <img src="assets/images/close.svg" alt="Close">
+                </button>
+        </div><!--/. modal_inner -->
+    </div><!--/. modal -->
 
 </body>
 
