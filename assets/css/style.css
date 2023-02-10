@@ -104,6 +104,14 @@ ol {
   background-size: cover;
 }
 
+.intro--blog {
+    background: #000 url(../images/blog-bg.jpg) no-repeat center;
+    height: 350px;
+    background-size: cover;
+
+
+}
+
 .intro__inner {
   height: 600px;
   display: flex;
