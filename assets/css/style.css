@@ -63,7 +63,7 @@ ol {
 .header {
   width: 100%;
   height: 85px;
-  background: rgba(0, 0, 0, 0.2);
+  background: rgba(0, 0, 0, 0.6);
   position: fixed; /* зафиксировать шапку */
   top: 0;
   right: 0;
@@ -94,11 +94,19 @@ ol {
 }
 
 .nav__link:not(.active):hover {
-    text-decoration: underline;
+  text-decoration: underline;
 }
 
 .nav__link.active {
   background-color: #004af2;
+}
+
+/* Burger */
+.burger {
+  display: none;
+  padding: 0;
+  background: none;
+  border: 0;
 }
 
 /* Intro */
@@ -194,7 +202,7 @@ ol {
 }
 
 .reqest-form__text {
-    margin-top: 5px;
+  margin-top: 5px;
   font-size: 15px;
   font-weight: 400;
   color: #fff;
@@ -614,6 +622,7 @@ ol {
   font-size: 14px;
   color: #585858;
   line-height: 1;
+  margin-bottom: 30px;
 }
 
 .team__contacts li {
@@ -696,9 +705,8 @@ ol {
 /* News */
 .articles {
   display: flex;
-  flex-wrap: wrap;
   justify-content: space-between; /* что бы 1 новость была слева. 2 справа */
-  margin-bottom: 30px;
+  margin: 0 -15px 30px;
 }
 
 .articles--column {
@@ -714,6 +722,7 @@ ol {
   width: 100%;
   max-width: 500px;
   margin-bottom: 20px;
+  padding: 0 15px;
 }
 
 .articles__title {
@@ -908,13 +917,12 @@ ol {
 }
 
 .main__col--text {
-    width: 70%;
+  width: 70%;
 }
 
 .main_col--right {
   margin-left: auto;
 }
-
 
 /* Text */
 .text {
@@ -923,7 +931,7 @@ ol {
   font-weight: 400;
   line-height: 1.5;
   color: #585858;
-  margin-bottom: 50px; 
+  margin-bottom: 50px;
 }
 
 .text p {
@@ -956,4 +964,256 @@ ol {
   display: block;
   max-width: 100%;
   height: auto;
+}
+
+/* Media Queries */
+@media (max-width: 991px) {
+
+  /*Intro*/
+.intro__title {
+  font-size: 90px;
+}
+
+  .section__title {
+    text-align: center;
+  }
+
+  .services__item {
+    width: 50%;
+  }
+
+  .clients {
+    flex-direction: column;
+    margin-bottom: 30px;
+  }
+
+  .clients__logos,
+  .clients__rewiews {
+    width: 100%;
+  }
+
+  /* clients */
+  .clients__list {
+    justify-content: center;
+  }
+
+  .clients__list li {
+    margin-bottom: 40px;
+    max-width: 130px;
+  }
+
+  /* footer */
+  .footer {
+    background-size: 350px auto;
+    background-position: left -50px bottom -20px, right -50px bottom -20px;
+    margin-top: 30px;
+  }
+}
+
+@media (max-width: 767px) {
+  /* header */
+  .header {
+    height: 50px;
+    background-color: rgba(0, 0, 0, 0.9);
+  }
+
+  /* nav */
+  .header__inner {
+    height: 50px;
+  }
+
+  .nav {
+    display: none;
+    width: 100%;
+    height: auto;
+    min-height: calc(100vh - 50px);
+    flex-direction: column;
+    position: absolute;
+    padding-top: 10px;
+    top: 100%;
+    left: 0;
+    right: 0;
+    z-index: 1;
+
+    background-color: rgba(0, 0, 0, 0.85);
+  }
+
+  .burger {
+    display: block;
+  }
+
+  .nav__link {
+    display: block;
+    padding: 10px 15px;
+    text-align: right;
+  }
+
+  /* intro */
+
+  .intro__inner {
+    flex-direction: column;
+    align-items: center;
+
+    height: auto;
+    padding-top: 80px;
+    padding-bottom: 30px;
+  }
+
+  .intro__text {
+    order: 1;
+    width: 100%;
+    text-align: center;
+    padding-top: 30px;
+    margin-bottom: 25px;
+  }
+  
+
+  .intro__title-amp {
+    right: auto;
+    left: 50%;
+    transform: translate3d(-50%, -50%, 0);
+    font-size: 120px;
+  }
+
+  /* reqest-form */
+
+  .reqest-form--intro {
+    order: 2;
+    position: static;
+  }
+
+  /* section */
+  .section {
+    padding: 30px 0;
+  }
+
+  /* clients */
+  .clients__list {
+    justify-content: center;
+  }
+
+  /* Benefits */
+  .benefits {
+    flex-direction: column;
+  }
+
+  .benefits-list {
+    max-width: 90%;
+  }
+
+  .benefits__сol {
+    width: 100%;
+    padding: 20px 0;
+  }
+
+  /* team */
+  .team {
+    flex-direction: column;
+  }
+
+  .team__col {
+    width: 100%;
+  }
+
+  .team__col:last-child {
+    margin-bottom: 0;
+  }
+
+  .team__item {
+    max-width: 370px;
+    margin: 0 auto;
+  }
+
+  /* Mission */
+  .mission-title {
+    font-size: 70px;
+    line-height: 1.1;
+    margin-bottom: -20px;
+  }
+
+  .mission {
+    padding: 40px 20px;
+  }
+
+  .mission__title {
+    font-size: 24px;
+  }
+
+  /* News */
+  .articles {
+    flex-wrap: wrap;
+  }
+
+  .articles__item {
+    max-width: none;
+  }
+
+  /* footer */
+  .footer {
+    background-size: 300px auto;
+  }
+}
+
+@media (max-width: 575px) {
+  /* intro */
+
+  .intro {
+    margin-bottom: 0;
+  }
+
+  .intro__title {
+    font-size: 60px;
+  }
+
+  .intro__title-amp {
+    font-size: 90px;
+  }
+
+  .reqest-form__title {
+    font-size: 24px;
+  }
+
+  .intro__inner {
+    padding-bottom: 80px;
+  }
+
+  /* servises */
+  .servises {
+    padding: 90px 0 10px;
+}
+
+  .services__item {
+    width: 100%;
+  }
+  .services__mail-title {
+    font-size: 60px;
+    width: 100%;
+    text-align: center;
+    bottom: auto;
+    right: auto;
+    top: 20px;
+  }
+
+  /* section */
+  .section__title {
+    font-size: 35px;
+  }
+
+  /* clients */
+  .clients__list {
+    justify-content: center;
+    margin: 0 -15px;
+  }
+
+  .clients__list li {
+    width: 30%;
+    margin-right: 0;
+    max-width: none;
+    padding: 0 15px;
+  }
+
+  /* footer */
+  .footer {
+    background-size: 210px auto;
+  }
 }
