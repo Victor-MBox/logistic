@@ -17,8 +17,8 @@
             <div class="header__inner">
                 <a href="index.html"><img class="img" src="assets/images/logo.svg" alt="CenterLogistic"></a>
 
-                <nav class="nav">
-                    <a class="nav__link active" href="#" data-scroll="#services">Services</a>
+                <nav class="nav" id="nav">
+                    <a class="nav__link" href="#" data-scroll="#services">Services</a>
                     <a class="nav__link" href="#" data-scroll="#clients">Clients</a>
                     <a class="nav__link" href="#" data-scroll="#benefits">Benefits</a>
                     <a class="nav__link" href="#" data-scroll="#team">Team</a>
@@ -78,7 +78,7 @@
     </div><!--/. Intro -->
 
     <!-- Services -->
-    <section class="section" id="services">
+    <section class="section" id="services" data-scrollspy="#services">
         <div class="container">
             <div class="servises">
                 <h2 class="services__mail-title">
@@ -140,7 +140,7 @@
     </section>
 
     <!-- Clients -->
-    <section class="section  section--map" id="clients">
+    <section class="section  section--map" id="clients" data-scrollspy="#client">
         <div class="container">
             <h2 class="section__title"><span>Our</span> Clients</h2>
             <div class="clients">
@@ -220,7 +220,7 @@
     </section>
 
     <!-- Benefits -->
-    <section class="section" id="benefits">
+    <section class="section" id="benefits" data-scrollspy="#benefits">
         <div class="container">
             <h2 class="section__title">
                 <span>Our</span> benefits
@@ -270,7 +270,7 @@
     </section> 
 
     <!-- Team -->
-    <section class="section  section--gray" id="team">
+    <section class="section  section--gray" id="team" data-scrollspy="#team">
         <div class="container">
             <h2 class="section__title">
                 <span>Our</span> team
@@ -336,7 +336,7 @@
     </section>
 
     <!-- Mission -->
-    <section class="section" id="mission">
+    <section class="section" id="mission" data-scrollspy="#mission">
         <div class="container">
             <h2 class="mission-title">Our Mission</h2>
             <div class="mission">
@@ -350,7 +350,7 @@
     </section><!--/. section -->
 
     <!-- News -->
-    <section class="section" id="news">
+    <section class="section" id="news" data-scrollspy="#news">
         <div class="container">
             <h2 class="section__title"><span> Interesting</span> to read</h2>
 
@@ -468,7 +468,7 @@
 
 
     <!-- Javascript-->
-    <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.6.2.slim.min.js"></script>
+    <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.6.2.min.js"></script>
     <script src="assets/js/app.js"></script>
 
 </body>
