@@ -6,11 +6,12 @@
     <link href="https://fonts.googleapis.com/css?family=Lato:400,700,900|PT+Sans&display=swap&subset=cyrillic"
         rel="stylesheet">
     <link rel="stylesheet" href="assets/css/style.css">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <title>CenterLogistic</title>
 </head>
 
 <body>
+
     <!-- Header -->
     <header class="header">
         <div class="container">
@@ -23,7 +24,8 @@
                     <a class="nav__link active" href="text.html">Privacy Policy</a>
                     <a class="nav__link" href="#">Terma &amp Conditions</a>
                 </nav>
-                <button class="burger" type="button"><img class="burger__icon" src="assets/images/burger.svg" alt=""></button> 
+                <button class="burger" type="button"><img class="burger__icon" src="assets/images/burger.svg"
+                        alt=""></button>
             </div>
         </div>
     </header>
@@ -31,48 +33,87 @@
     <!-- Intro -->
     <div class="intro   intro--text"></div>
 
-    <!-- Text -->
+    <!-- Main -->
     <section class="section">
         <div class="container">
-            <h1 class="section__title"><span>Privacy</span> Policy</h1>
+            <main class="main">
+                <div class="main__col--text">
+                    <h1 class="section__title"><span>Interesting</span> to read</h1>
 
-            <div class="text">
-                <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy).
-                </p>
-                <h3>Some subtitle</h3>
-                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, remaining essentially unchanged. It was popularised in the 1960s.
-                </p>
-                <ul>
-                    <li>- unordered list item</li>
-                    <li>- unordered list item</li>
-                    <li>- unordered list item</li>
-                </ul>
+                    <div class="articles  articles--column">
+                        <article class="articles__item">
+                            <h4 class="articles__title">
+                                <a href="#">News title</a>
+                            </h4>
+                            <img class="img img--news" src="assets/images/text-bg.jpg" alt="">
+                            <div class="articles__text">
+                                Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod
+                                tempor
+                                invidunt
+                                ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam
+                                et
+                                justo duo
+                                dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem
+                                ipsum
+                                dolor
+                                sit amet.
+                            </div>
+                            <time class="articles__data" pubdate="01-03-2022 19:00">1 March, 2022</time>
 
-                <p>
-                    <img src="assets/images/text-bg.jpg" alt="">
-                </p>
 
-                <hr>
+                        </article>
 
-                <h4>Some subtitle</h4>
-                <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text.If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text.
-                </p>
-                <ol>
-                    <li>unordered list item</li>
-                    <li>unordered list item</li>
-                    <li>unordered list item</li>
-                </ol>
-                
-            </div><!--/. Text  -->
+                        <article class="articles__item">
+                            <h4 class="articles__title">
+                                <a href="#">News title</a>
+                            </h4>
+                            <img class="img img--news" src="assets/images/blog-bg.jpg" alt="">
+                            <div class="articles__text">
+                                Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod
+                                tempor
+                                invidunt
+                                ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam
+                                et
+                                justo duo
+                                dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem
+                                ipsum
+                                dolor
+                                sit amet.
+                            </div>
+                            <time class="articles__data" pubdate="01-03-2022 19:00">1 March, 2022</time>
 
-            <a class="btn  btn--orange" href="index.html">Back to home</a>
+                        </article>
 
-        </div><!--/. Container -->
+                        <article class="articles__item">
+                            <h4 class="articles__title">
+                                <a href="#">News title</a>
+                            </h4>
+                            <img class="img img--news" src="assets/images/intro-bg2.jpg" alt="">
+                            <div class="articles__text">
+                                Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod
+                                tempor
+                                invidunt
+                                ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam
+                                et
+                                justo duo
+                                dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem
+                                ipsum
+                                dolor
+                                sit amet.
+                            </div>
+                            <time class="articles__data articles__data--last" pubdate="01-03-2022 19:00">1 March,
+                                2022</time>
+                            <a class="btn  btn--orange" href="index.html">Back to home</a>
+                        </article>
+
+                    </div>
+                </div>
+            </main>
+        </div>
     </section>
-
     <!-- Footer -->
     <footer class="footer">
-        <div class="container"> 
+        <div class="container">
             <img src="assets/images/logo-black.svg" alt="">
             <address class="footer__contacts">
                 <p>New York, Street, ZIP code</p>
@@ -86,6 +127,12 @@
             </nav>
         </div><!--/. container -->
     </footer><!--/. footer -->
+
+
+
+    <!-- Javascript-->
+    <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.6.2.slim.min.js"></script>
+    <script src="assets/js/app.js"></script>
 
 </body>
 
