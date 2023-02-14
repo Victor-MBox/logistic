@@ -5,7 +5,8 @@
     <meta charset="UTF-8">
     <link href="https://fonts.googleapis.com/css?family=Lato:400,700,900|PT+Sans&display=swap&subset=cyrillic"
         rel="stylesheet">
-    <link rel="stylesheet" href="assets/css/style.css">
+        <link rel="stylesheet" href="assets/css/slick.css">
+        <link rel="stylesheet" href="assets/css/style.css">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>CenterLogistic</title>
 </head>
@@ -15,13 +16,14 @@
     <header class="header" id="header">
         <div class="container">
             <div class="header__inner">
-                <a href="index.html"><img class="img" src="assets/images/logo.svg" alt="CenterLogistic"></a>
+                <a href="#" data-scroll="#intro"><img class="img" src="assets/images/logo.svg" alt="CenterLogistic"></a>
 
                 <nav class="nav" id="nav">
                     <a class="nav__link" href="#" data-scroll="#services">Services</a>
                     <a class="nav__link" href="#" data-scroll="#clients">Clients</a>
                     <a class="nav__link" href="#" data-scroll="#benefits">Benefits</a>
                     <a class="nav__link" href="#" data-scroll="#team">Team</a>
+                    <a class="nav__link" href="#" data-scroll="#mission">Mission</a>
                     <a class="nav__link" href="#" data-scroll="#news">News</a>
                     <a class="nav__link" href="#">Contact Us</a>
                 </nav>
@@ -34,6 +36,17 @@
 
     <!-- Intro -->
     <div class="intro" id="intro">
+        <div class="intro__slider" id="introSlider">
+            
+            <div>
+                <img class="intro__slider-photo" src="assets/images/intro-bg2.jpg" alt="">
+            </div>
+            
+            <div>
+                <img class="intro__slider-photo" src="assets/images/blog-bg.jpg" alt="">
+            </div>
+
+        </div>
         <div class="container">
             <div class="intro__inner">
 
@@ -73,6 +86,12 @@
                             Trans<br>Logistic
                         </h1>
                     </div>
+
+                    <div class="intro__slider-arrow">
+                        <button id="introSliderPrev" class="intro__slider-btn  intro__slider-btn--prev" type="button">Prev</button>
+                        <button id="introSliderNext" class="intro__slider-btn  intro__slider-btn--next" type="button">Next</button>
+                    </div>
+
             </div><!--/. Intro-inner -->
         </div><!--/. Container -->
     </div><!--/. Intro -->
@@ -140,7 +159,7 @@
     </section>
 
     <!-- Clients -->
-    <section class="section  section--map" id="clients" data-scrollspy="#client">
+    <section class="section  section--map" id="clients" data-scrollspy="#clients">
         <div class="container">
             <h2 class="section__title"><span>Our</span> Clients</h2>
             <div class="clients">
@@ -213,7 +232,7 @@
                 </div>
             </div><!--/. clients -->
 
-            <button class="btn btn--orange btn--shadow" href="#">Become a client</button>
+            <button class="btn btn--orange btn--shadow" type="button" data-modal="#becomeClientModal">Become a client</button>
             <span class="clients__love">we love our clients</span>
 
         </div><!--/. container -->
@@ -436,7 +455,7 @@
                         </address>
                 </div>
 
-                <button class="modal__close" type="button">
+                <button class="modal__close" type="button" data-modal-close="">
                     <img src="assets/images/close.svg" alt="Close">
                 </button>
         </div><!--/. modal_inner -->
@@ -469,6 +488,7 @@
 
     <!-- Javascript-->
     <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.6.2.min.js"></script>
+    <script src="assets/js/slick.min.js"></script>
     <script src="assets/js/app.js"></script>
 
 </body>
