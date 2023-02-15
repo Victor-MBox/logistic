@@ -9,7 +9,7 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
-body.no-scroll {
+body.no-scroll, body.show-nav {
   overflow: hidden;
 }
 
@@ -70,7 +70,8 @@ ol {
   width: 100%;
   height: 85px;
   background: rgba(0, 0, 0, 0.3);
-  position: fixed; /* зафиксировать шапку */
+  position: fixed;
+  /* зафиксировать шапку */
   top: 0;
   right: 0;
   left: 0;
@@ -78,12 +79,13 @@ ol {
   transition: background .3s linear;
 }
 
-.header--dark {
+.header--dark, body.show-nav .header {
   background: rgba(0, 0, 0, 0.9);
 }
 
 .header__inner {
-  display: flex; /* отцентровать вертикаль */
+  display: flex;
+  /* отцентровать вертикаль */
   height: 85px;
   justify-content: space-between;
   align-items: center;
@@ -115,12 +117,69 @@ ol {
 }
 
 /* Burger */
+
 .burger {
-  display: none;
+  width: 30px;
+  height: 23px;
+  position: relative;
   padding: 0;
   background: none;
   border: 0;
+
+  font-size: 0;
+  color: transparent;
+
+  display: none;
 }
+
+.burger:focus {
+  outline: none;
+}
+
+.burger__line {
+  display: block;
+  width: 30px;
+  height: 2px;
+  margin: 3px 0;
+
+  background-color: #fff;
+
+  transition: transform .2s ease-out;
+}
+
+.burger__line:nth-child(1) {
+  width: 20px;
+  margin-left: auto;
+}
+
+.burger__line:nth-child(1),
+.burger__line:nth-child(3) {
+  transform-origin: right;
+  transition: width .2s ease-out;
+}
+
+.burger.active .burger__line:nth-child(1),
+.burger.active .burger__line:nth-child(3) {
+  width: 0;
+}
+
+.burger.active .burger__line:nth-child(2),
+.burger.active .burger__line:nth-child(4) {
+  position: absolute;
+  left: 0;
+  top: 50%;
+
+  transform-origin: center;
+}
+
+.burger.active .burger__line:nth-child(2) {
+  transform: rotate(45deg);
+}
+
+.burger.active .burger__line:nth-child(4) {
+  transform: rotate(-45deg);
+}
+
 
 /* Intro */
 .intro {
@@ -131,22 +190,18 @@ ol {
 
 
 .intro--blog {
-  background: linear-gradient(
-      to top,
+  background: linear-gradient(to top,
       rgba(27, 27, 27, 0.3),
-      rgba(19, 19, 19, 0.3)
-    ),
+      rgba(19, 19, 19, 0.3)),
     url(../images/blog-bg.jpg) no-repeat center;
   height: 350px;
   background-size: cover;
 }
- 
+
 .intro--text {
-  background: linear-gradient(
-      to top,
+  background: linear-gradient(to top,
       rgba(27, 27, 27, 0.4),
-      rgba(19, 19, 19, 0.4)
-    ),
+      rgba(19, 19, 19, 0.4)),
     url(../images/text-bg.jpg) no-repeat center;
   height: 350px;
   background-size: cover;
@@ -219,13 +274,13 @@ ol {
 .intro__slider-btn--prev {
   border-style: solid;
   border-width: 10px 10px 10px 0;
-  border-color: transparent #ffffff   transparent transparent;
+  border-color: transparent #ffffff transparent transparent;
 }
 
 .intro__slider-btn--next {
-border-width: 10px 0 10px 10px;
-border-color: transparent transparent transparent #ffffff;
-border-style: solid;
+  border-width: 10px 0 10px 10px;
+  border-color: transparent transparent transparent #ffffff;
+  border-style: solid;
 }
 
 
@@ -554,7 +609,7 @@ border-style: solid;
 .reviews .slick-dots {
   justify-content: center;
   width: 100%;
-  display: flex; 
+  display: flex;
   position: absolute;
   left: 0;
   right: 0;
@@ -568,7 +623,7 @@ border-style: solid;
 
 .reviews .slick-dots li.slick-active button {
   background: #004AF2;
- box-shadow: 0 0 0 5px rgba(0, 74, 242, 0.11);
+  box-shadow: 0 0 0 5px rgba(0, 74, 242, 0.11);
 }
 
 
@@ -598,13 +653,13 @@ border-style: solid;
 .reviews:before,
 .reviews:after {
   content: "";
-   display: block;
-   width: 10px;
-   height: 100%;
+  display: block;
+  width: 10px;
+  height: 100%;
 
-   position: absolute;
-   top: 0;
-   z-index: 3;
+  position: absolute;
+  top: 0;
+  z-index: 3;
 }
 
 .reviews:before {
@@ -620,7 +675,8 @@ border-style: solid;
 
 .reviews__header {
   display: flex;
-  align-items: center; /* отцентровать вертикаль */
+  align-items: center;
+  /* отцентровать вертикаль */
   margin-bottom: 30px;
   position: relative;
   z-index: 2;
@@ -867,7 +923,8 @@ border-style: solid;
 /* News */
 .articles {
   display: flex;
-  justify-content: space-between; /* что бы 1 новость была слева. 2 справа */
+  justify-content: space-between;
+  /* что бы 1 новость была слева. 2 справа */
   margin: 0 -15px 30px;
 }
 
@@ -1145,6 +1202,7 @@ border-style: solid;
 
 /* Media Queries */
 @media (max-width: 991px) {
+
   /*Intro*/
   .intro__title {
     font-size: 90px;
@@ -1198,12 +1256,14 @@ border-style: solid;
   .main_col--right {
     margin: 30px auto 0;
   }
+
   .main__col--text {
     width: 100%;
-}
+  }
 }
 
 @media (max-width: 767px) {
+
   /* header */
   .header {
     height: 50px;
@@ -1215,7 +1275,6 @@ border-style: solid;
   }
 
   .nav {
-    display: none;
     width: 100%;
     height: auto;
     min-height: calc(100vh - 50px);
@@ -1228,12 +1287,22 @@ border-style: solid;
     z-index: 1;
 
     background-color: rgba(0, 0, 0, 0.85);
+
+    transform: translateX(100%);
+    transition: transform .3s ease-out;
+  }
+
+  .nav.show {
+    transform: translateX(0);
   }
 
   .burger {
     display: block;
   }
 
+
+
+  
   .nav__link {
     display: block;
     padding: 10px 15px;
@@ -1380,6 +1449,7 @@ border-style: solid;
   .services__item {
     width: 100%;
   }
+
   .services__mail-title {
     font-size: 60px;
     width: 100%;
