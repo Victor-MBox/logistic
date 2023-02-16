@@ -31,15 +31,18 @@
                     <img src="assets/images/logo.svg" alt="CenterLogistic">
                 </a>
 
-                <nav class="nav">
+                <nav class="nav" id="nav">
                     <a class="nav__link" href="index.html">Home</a>
                     <a class="nav__link  active" href="blog.html">Blog</a>
                     <a class="nav__link" href="text.html">Privacy Policy</a>
                     <a class="nav__link" href="text2.html">Terms &amp; Conditions</a>
                 </nav>
 
-                <button class="burger" type="button">
-                    <img class="burger__icon" src="assets/images/burger.svg" alt="">
+                <button class="burger" type="button" id="navToggle">
+                    <span class="burger__line">1</span>
+                    <span class="burger__line">2</span>
+                    <span class="burger__line">3</span>
+                    <span class="burger__line">4</span>
                 </button>
             </div>
         </div>
@@ -52,7 +55,7 @@
 
 
     <!-- Main -->
-    <section class="section  section--last">
+    <div class="section  section--last">
         <div class="container">
             <main class="main">
                 <div class="main__col  main__col--left">
@@ -64,7 +67,7 @@
                                 <a href="#">News title</a>
                             </h4>
                             <div class="articles__text">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</div>
-                            <time class="articles__date" pubdate="21-03-2019 19:00">21 March, 2019</time>
+                            <time class="articles__date" datetime="2023-03-21 19:00">21 March, 2019</time>
                         </article>
 
                         <article class="articles__item">
@@ -72,7 +75,7 @@
                                 <a href="#">News title</a>
                             </h4>
                             <div class="articles__text">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</div>
-                            <time class="articles__date" pubdate="21-03-2019 19:00">21 March, 2019</time>
+                            <time class="articles__date" datetime="2023-03-21 19:00">21 March, 2019</time>
                         </article>
 
                         <article class="articles__item">
@@ -80,7 +83,7 @@
                                 <a href="#">News title</a>
                             </h4>
                             <div class="articles__text">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</div>
-                            <time class="articles__date" pubdate="21-03-2019 19:00">21 March, 2019</time>
+                            <time class="articles__date" datetime="2023-03-21 19:00">21 March, 2019</time>
                         </article>
 
                         <article class="articles__item">
@@ -88,7 +91,7 @@
                                 <a href="#">News title</a>
                             </h4>
                             <div class="articles__text">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</div>
-                            <time class="articles__date" pubdate="21-03-2019 19:00">21 March, 2019</time>
+                            <time class="articles__date" datetime="2023-03-21 19:00">21 March, 2019</time>
                         </article>
                     </div><!-- /.articles -->
 
@@ -124,7 +127,7 @@
                 </div>
             </main>
         </div><!-- /.container -->
-    </section>
+    </div>
 
 
     <!-- Footer -->
@@ -140,8 +143,8 @@
             </address>
 
             <nav class="footer__nav">
-                <a href="text.html">Terms &amp; Contidions</a>
-                <a href="text2.html">Privacy Policy</a>
+                <a href="text2.html">Terms &amp; Contidions</a>
+                <a href="text.html">Privacy Policy</a>
                 <a href="blog.html">Our blog</a>
             </nav>
         </div>
